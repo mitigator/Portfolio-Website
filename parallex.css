@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+.header{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+.background, .foreground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.background{
+    transform: translateZ(-38px) scale(5);
+}
+.foreground{
+    transform: translateZ(-20px) scale(1);
+}
+h1{
+    position: absolute;
+    top: 10rem;
+    left: 25%;
+    font-size: 10rem;
+    color: white;
+    text-shadow: 0 0 10px rgb(0, 0, 3);
+    letter-spacing: 4px;
+
+}
+.container{
+    background-color: rgb(45,45,45);
+    color: white;
+    padding: 5rem 0;
+}
+.bg{
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+.bg1{
+    background-image: url(./assets/CP.jpg);
+}
+.bg2{
+    background-image: url(./assets/Frontend.jpg);
+}
+.bg3{
+    background-image: url(./assets/Student.jpg);
+}
+.heading{
+    font-size: 5rem;
+    padding: 0 10rem;
+}
+.text{
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+.desc{
+    position: absolute;
+    background-color: rgb(137, 137, 137);
+    padding: 0.5rem 2.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: black;
+    font-size: 2.5rem;
+
+}
+
